@@ -1,0 +1,2 @@
+# Racunalniski praktikum
+amen
