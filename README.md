@@ -1,2 +1,3 @@
-# Racunalniski praktikum
+# Računalniški praktikum
 amen
+šumniki
