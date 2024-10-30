@@ -18,7 +18,9 @@ body {
     /*  Obojestranska poravnava besedila    */
     text-align: justify;
 }
-
+h1 {color:#330066;}
+h2 {margin-top: 2em; border-top: 1px solid #AAAAAA; padding-top: 0.5 em;}
+#uvod {padding: 2 em;background-color: rgb(51, 0, 102, 0.1);}
 /*  Odstranimo podčrtovanje povezav in outline (ta se včasih pokaže kot kvadratek okrog povezave)  */
 a { text-decoration: none; outline:none; }
 /*  Spremenimo barve povezav: neobiskanih, obiskanih, pod miško in aktivnih */
@@ -26,7 +28,7 @@ a:link { color:#cc0000; }
 a:visited { color:#660066; }
 a:hover { color:#660066; }
 a:active { color:#990000; outline:none; }
-
+.div {border: #cc0000;
 code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: #009966;
