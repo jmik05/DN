@@ -34,7 +34,7 @@ prav začel? Zakaj nam vsaj v petek niso malo popustili? Kdo je sploh lahko izde
 takšen urnik?
 
 To so vprašanja, na katera seveda nikoli nismo dobili odgovora, čeprav je le-ta na zadnje
-vprašanje več kot očiten - izdelala ga je oseba, ki so ji to delo naprtili. Naprtili je
+vprašanje več kot očiten - -izdelala ga je oseba, ki so ji to delo naprtili. Naprtili je
 zelo primerna beseda, saj gre za zahtevno opravilo, ki izdelovalcu urnikov nemalokrat
 pusti ogromno sivih las. Ne bi se rad postavil v kožo ubožca, ki konča z izdelavo urnika,
 nakar ves zgrožen ugotovi, da je spregledal prekrivanje dveh šolskih ur, kar pomeni, da
@@ -111,7 +111,7 @@ katere podatke naj vsebujejo.
    podrobneje opisana na koncu poglavja.
 
    Razred /Skupina/ predstavlja skupino študentov. Kot podatke torej potrebujemo
-   smer skupine (npr. pedagoška matematika) ter število študentov v njej. Podobno kot pri
+   smer skupine (npr. / pedagoška matematika) ter število študentov v njej. Podobno kot pri
    profesorjih, tudi tukaj potrebujemo tabelo zasedenosti.
 
    Razred /Predavalnica/ nosi podatke o kapaciteti predavalnice, njeno oznako
@@ -140,7 +140,7 @@ dovolj, če podamo zasedenost le za en teden.
 Tip vrednosti tabele ni striktno določen. Tako bi nekateri programerji uporabili
 celoštevilsko tabelo, kjer bi vrednost 1 pomenila, da je oseba zasedena, vrednost 0
 pa bi predstavljala njeno dosegljivost. Podobno bi postopali, če bi izbrali logični
-tip (npr. bool v C++), kjer bi vrednost true predstavljala
+tip (npr.\,bool v C++), kjer bi vrednost true predstavljala
 dosegljivost, false pa zasedenost.
 
 Omejitve % podrazdelek
@@ -164,8 +164,8 @@ Poglejmo si nekaj omejitev, ki jih urnik ne sme kršiti:
    Nobena skupina ne sme imeti več predavanj hkrati.
    Nobena predavalnica ne sme biti dodeljena večim predavanjem hkrati.
    Predavalnica mora imeti zadostno kapaciteto.
-   Predavanja posebne vrste (npr. vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
-   Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr. od sedmih zjutraj do osmih zvečer).
+   Predavanja posebne vrste (npr.\,vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
+   Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr.\,od sedmih zjutraj do osmih zvečer).
 % konec okolja itemize
 
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
@@ -176,7 +176,7 @@ krši nobenega izmed zgoraj naštetih načel, a še zdaleč ne ustreza merilom k
 
 Algoritem je najbolje implementirati tako, da do kršenja strogih omejitev sploh ne more priti.
 Tabela zasedenosti je dober primer pametne implementacije, saj tako že v osnovi  preprečujemo
-dodeljevanje t.i. prekrivanj. Če želi algoritem dodeliti predavanje določeni predavalnici,
+dodeljevanje t.i.\,prekrivanj. Če želi algoritem dodeliti predavanje določeni predavalnici,
 mora najprej v tabeli zasedenosti preveriti, če je v tistem terminu le-ta še na voljo,
 sicer se vstavljanje ne izvede.
 
@@ -231,7 +231,7 @@ sprejet s strani večine, pa bi se povečala.
 
 Kot zanimivost naj omenimo, da se nekateri programerji odločajo tudi za utežitev strogih
 omejitev s to razliko, da so vrednosti teh uteži izjemno velike, zato se bo algoritem
-(skoraj) vedno "odločil", da jih ne bo prekršil. Tak način uteževanja pride v poštev
+(skoraj) vedno ">odločil"<, da jih ne bo prekršil. Tak način uteževanja pride v poštev
 takrat, ko algoritem v osnovi ne zadosti strogim omejitvam urnika.
 
 Ko enkrat ustrezno nastavimo vrednosti uteži, je treba ugotoviti, kako bomo postopali
@@ -245,13 +245,13 @@ Nižja vrednost formule pomeni kakovostnejši urnik, izračunamo pa jo na vsakem
 Korak pri izdelavi urnika predstavlja eno izmed operacij nad njim (označuje njegovo
 spremembo).
 
-V 2. poglavju bomo opisali postopek gradnje urnika, saj bomo podrobneje spoznali
+V 2.\,poglavju bomo opisali postopek gradnje urnika, saj bomo podrobneje spoznali
 operacije nad urnikom in več vrst optimizacijskih metod, ki jih lahko brez oklevanja
 poimenujemo kar osrčje programa za avtomatizirano izdelavo urnika.
 
 \section{Avtomatizirana izdelava}
 
-V 1. poglavju smo izvedeli, da ročna izdela urnikov ni tako preprosta, kot bi si
+V 1.\,poglavju smo izvedeli, da ročna izdela urnikov ni tako preprosta, kot bi si
 na prvi pogled predstavljali. Še večji izziv predstavlja implementacija algoritma, ki da
 (fakultetni) urnik. Obstaja pa velika razlika med prvim in drugim pristopom, saj ko je
 algoritem enkrat dobro napisan, smo se težav z izdelovanjem urnika za vselej rešili.
@@ -402,7 +402,7 @@ korakov, in si šele nato ogledajo njihov natančen opis.
    ustavitveni pogoj je zadovoljivo velika vrednost kriterijske funkcije.
 
    Naključno izberemo okolico trenutne rešitve. Z okolico izberemo tudi operacijo,
-   ki jo izvajamo na tem koraku (npr. zamenjava dveh srečanj).
+   ki jo izvajamo na tem koraku (npr.\,zamenjava dveh srečanj).
 
    Če v tem koraku izberemo tisto zamenjavo srečanj, ki izmed vseh možnih najbolj
    poveča vrednost kriterijske funkcije, potem postopamo enako, kot požrešna metoda. Če
@@ -426,7 +426,7 @@ pripeljal do njega. Naključna izbira okolic ter sprejemanje ne nujno najboljše
 nas varujeta, da ne bomo obstali v prvem lokalnem maksimumu, ampak bomo vedno znova
 iskali boljše rešitve.
 
-Slabost do sedaj obravnavanih tehnik še vedno ostaja - ko enkrat obtičimo v lokalnem
+Slabost do sedaj obravnavanih tehnik še vedno ostaja - -ko enkrat obtičimo v lokalnem
 maksimumu, se iz njega ne moremo rešiti. Naslednja metoda poskuša na svojevrsten, a zelo
 sistematičen način odpraviti to težavo.
 
@@ -436,10 +436,10 @@ Iskanje s tabuji % podpodrazdelek
 Glede na to, da bi naj iskanje s tabuji odpravilo problem vračanja v isti lokalni maksimum,
 prepovedujemo izvajanje sprememb, s katerimi bi se vrnili v že najden lokalni maksimum.
 
-Rešitev se ponuja kar sama - za naslednjih ?? korakov prepovemo vsako spremembo, ki jo
+Rešitev se ponuja kar sama - -za naslednjih ?? korakov prepovemo vsako spremembo, ki jo
 opravimo v koraku optimizacije. Izbira konstante ?? je odvisna od samega problema, saj
 ne obstaja neki splošen ??, ki bi nas v vsakem primeru pripeljal iz lokalnega ekstrema.
-Imamo torej seznam prepovedanih sprememb - /tabujev/ in na vsakem koraku za izbrano
+Imamo torej seznam prepovedanih sprememb - -/tabujev/ in na vsakem koraku za izbrano
 spremembo preverimo, če je element seznama tabujev. Če spremembe ni v seznamu tabujev, jo
 preprosto izvedemo, v primeru, da je, pa postopek vrnemo na iskanje druge spremembe.
 Algoritem iskanja s tabuji se od lokalnega vzpenjanja torej razlikuje le v tem, da pred
@@ -447,7 +447,7 @@ izbiro spremembe preveri, če je vsebovana v seznamu prepovedanih sprememb. Pogl
 je takšno postopanje smiselno.
 
 Naj bo ?? ter ?? sprememba urnika, ki nas je pripeljala v lokalni maksimum. To
-spremembo (npr. zamenjava ?? in ??) sedaj shranimo v
+spremembo (npr.\,zamenjava ?? in ??) sedaj shranimo v
 seznam tabujev. V naslednjem koraku izvedemo spremembo ??, ki se prav tako shrani v
 seznam prepovedanih sprememb. Podobno naredimo za vse spremembe v nadaljnih korakih. S
 tem poskrbimo, da se lahko v isti lokalni maksimum vrnemo šele čez ?? korakov, saj
@@ -491,12 +491,12 @@ točk, oziroma ki ima največjo vrednost kriterijske funkcije.
 % (Nekoliko lepše izgleda, če v prazno vrstico vstavite % za komentar.)
 To je le ena izmed možnosti, kako zastaviti optimizacijski potek, s katero smo želeli predstaviti
 simbiozo opisanih metod. Nič ne bi bilo narobe, če bi za iskanje najboljšega urnika posamično
-uporabili katero izmed tehnik - mogoče bi katero izmed teh postopanj dalo celo boljši rezultat.
+uporabili katero izmed tehnik - -mogoče bi katero izmed teh postopanj dalo celo boljši rezultat.
 
 Zaključek % podrazdelek
 
-% V spodnjem odstavku naj bodo črke G, U in I v "Graphical User Interface" podčrtane.
-Sledili smo receptu in s tem izdelali "okusen obrok", treba ga je le še ustrezno postreči
+% V spodnjem odstavku naj bodo črke G, U in I v ">Graphical User Interface"< podčrtane.
+Sledili smo receptu in s tem izdelali ">okusen obrok"<, treba ga je le še ustrezno postreči
 gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (Graphical
 User Interface), ki mora urnik uporabnikom predstaviti na razumljiv in
 pregleden način. Končnega izgleda izdelka nikakor ne smemo zanemariti, saj je ta med uporabniki
