@@ -1,6 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1732039969.53198 "c:/Users/janus/Desktop/DN/07-magicni-kvadrati/magic.tex" "magic.pdf" "magic" 1732039970.81341 0
-  "C:/Users/janus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1731516714 81760 910369822cd2d7c359b2482f4c0de4ca ""
+["bibtex magic"] 1732140122.23086 "magic.aux" "magic.bbl" "magic" 1732140200.16924 0
+  "./magic.bib" 1732037895 1019 99c3aefbef6333804bf69243a0c3bf27 ""
+  "C:/Users/janus/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "magic.aux" 1732140198 1839 1c7475b601b6410056c5fc32d15bfc21 "pdflatex"
+  (generated)
+  "magic.bbl"
+  "magic.blg"
+  (rewritten before read)
+["pdflatex"] 1732140197.89484 "c:/Users/janus/Desktop/DN/07-magicni-kvadrati/magic.tex" "magic.pdf" "magic" 1732140200.17024 0
+  "C:/Users/janus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1732139146 81760 910369822cd2d7c359b2482f4c0de4ca ""
   "C:/Users/janus/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1731517136 11986914 205ca5a677a97562259876bac7d33fbf ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc" 1256929440 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -58,6 +66,7 @@
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty" 1730400195 5275 b64d8404d74d2860b9c6558239dd0784 ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1730400195 5048 7ebf0f2edf1ef6783e8fe2201a95d0e8 ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1730400195 8449 c69e49af7cb761638914bc5dddad142a ""
+  "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465894292 1224 978390e9c2234eab29404bc21b268d1e ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/pdftex.def" 1713599642 19440 9da9dcbb27470349a580fca7372d454b ""
@@ -75,11 +84,12 @@
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd" 1430474546 2682 555da1faa2e266801e4b221d01a42cb5 ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/lm/ts1lmr.fd" 1430474546 1914 884882d7ebb0fd65cea93fca77ff6f5a ""
   "C:/Users/janus/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/janus/Desktop/DN/07-magicni-kvadrati/magic.tex" 1732039968 11941 b6e02a1c9b02202478cd060ae74a18a3 ""
+  "c:/Users/janus/Desktop/DN/07-magicni-kvadrati/magic.tex" 1732140196 12842 c20b9b32654e0f618cd6ae4f3770a563 ""
   "durer.png" 1732037894 49307 c9692a8c361fe34567154cebb97ad5d5 ""
-  "magic.aux" 1732039970 898 c1113c7edf8d0ea352138e94982453f1 "pdflatex"
-  "magic.tex" 1732039968 11941 b6e02a1c9b02202478cd060ae74a18a3 ""
-  "magic.toc" 1732039970 471 aec3af4ef0833e6a73b7d86642eb228a "pdflatex"
+  "magic.aux" 1732140198 1839 1c7475b601b6410056c5fc32d15bfc21 "pdflatex"
+  "magic.bbl" 1732140122 831 e4e76bffb67d95171898ace8a864c0b2 "bibtex magic"
+  "magic.tex" 1732140196 12842 c20b9b32654e0f618cd6ae4f3770a563 ""
+  "magic.toc" 1732140198 471 aec3af4ef0833e6a73b7d86642eb228a "pdflatex"
   "sagrada.png" 1732037895 118170 cc732cd2e989087e9820bfa6fd003959 ""
   "slika.pdf" 1732037895 7184 4c49b0abdbf8a2d3c38cc176cac49f8d ""
   (generated)

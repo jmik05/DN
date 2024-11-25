@@ -6,6 +6,7 @@
 \usepackage{amsthm}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{booktabs}
 \theoremstyle{definition}
 \newtheorem{definicija}{Definicija}
 \theoremstyle{plain}
@@ -61,7 +62,7 @@ Prirejeno iz virov:
 \newpage
 \section{Uvod}
 
-\begin{definicija}{definicija}
+\begin{definicija}
    \emph{Magični kvadrat} reda $n$ je nabor $n^2$ različnih števil,
    ki so razvrščena v kvadratno tabelo tako, da vedno dobimo enako vsoto,
    če seštejemo vsa števila poljubne vrstice, vsa števila poljubnega
@@ -73,18 +74,29 @@ Primer magičnega kvadrata reda 3 je prikazan v tabeli ?!?.
 % - napis nad tabelo: Magični kvadrat reda 3
 % - oznaka: table:mag3
 % Začetek magičnega kvadrata
+\begin{table}
+   \centering
+   \caption{Magični kvadrat reda 3}
+   \label{table:mag3}
+   \large
+   \begin{tabular}{ccc}
+      8 & 1 & 6 \\\hline
+      3 & 5 & 7 \\\hline
+      4 & 9 & 2 \\\hline
+   \end{tabular}
+\end{table}
 %   8 & 1 & 6 \\\hline
 %   3 & 5 & 7 \\\hline
 %   4 & 9 & 2 \\\hline
 % Konec magičnega kvadrata
 
-begin{definicija}
+\begin{definicija}
    Magični kvadrat reda $n$ je \emph{normalen}, če v njem nastopajo števila
    \begin{equation}
       % oznaka: eq:numbers
       1, 2, 3, \ldots, n^2-1, n^2.
    \end{equation}
-end{definicija}
+\end{definicija}
 
 Magični kvadrat v tabeli ?!? je normalen.
 To je tudi najmanjši netrivialen normalen magični kvadrat.
@@ -136,7 +148,7 @@ Lo Shu, vendar je vsako število povečano za 19.
 % Konec magičnega kvadrata
 
 Z magičnimi kvadrati so se ukvarjali tudi najbolj znani matematiki kot na
-primer Euler, glej ???. % ključ: euler
+primer Euler, glej \cite{euler}. % ključ: euler
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -152,12 +164,18 @@ za izsek s kvadratom) Albrechta Dürerja naj bi bil najzgodnejši magični kvadr
 v evropski umetnosti. Zelo podoben je kvadratu Yang Huija, ki je nastal na Kitajskem
 približno 250 let pred Dürerjevim časom. % sklic: fig:durer
 
+\begin{figure}[!ht]
+   \centering
+   \caption{Durejev magični kvadrat}
+   \includegraphics[scale=1.5]{durer.png}
+   \label{fig:durer}
+\end{figure}
 % Tu vstavite sliko
 % - napis nad sliko: Dürerjev magični kvadrat
 % - oznaka: fig:durer
 % Dodatni parameter v oglatih oglepajih sliko nastavi velikost
 % slike na 150% originalne velikosti.
-\includegraphics[scale=1.3]{durer.png}
+
 
 Vsoto 34 je mogoče najti pri seštevanju števil v vsaki vrstici, vsakem stolpcu,
 na vsaki diagonali, v vsakem od štirih kvadrantov, v sredinskih štirih poljih,
@@ -180,7 +198,12 @@ Pasijonska fasada na katedrali Sagrada família v Barceloni
 % Tu vstavite sliko
 % - napis nad sliko: Pasijonska fasada, Sagrada Família
 % - oznaka: fig:sagrada
-\includegraphics{sagrada.png}
+\begin{figure}
+   \centering
+   \caption{Pasijonska fasada, Sagrada Família}
+   \includegraphics{sagrada.png}
+   \label{fig:sagrada}
+\end{figure}
 
 Vsota števil v vrsticah, stolpcih oziroma na diagonalah je 33 -- Jezusova starost
 v času pasijona. Strukturno je kvadrat podoben Dürerjevemu, vendar so števila
@@ -204,20 +227,26 @@ begin{definicija}
 end{definicija}
 
 % Začetek okolja izrek
+\begin{izrek}
    Magična konstanta normalnega magičnega kvadrata reda !!
    je enaka
    \begin{equation}
       % oznaka: eq:mc
       M_2(n) = \frac{1}{2} n(n^2+1)
    \end{equation}
+\end{izrek}
 % Konec okolja izrek
 
 % Začetek dokaza
+\begin{proof}
+   
+
    V normalnem magičnem kvadratu reda $n$ je vsota vseh nastopajočih
    števil (glej ?? na strani ??) enaka
    $1+2+3+\dots+n^2=\sum_{k=1}^{n^2}k=\frac{1}{2}n^2(n^2+1)$. Ker imamo
    v kvadratu $n$ vrstic z enako vsoto, je vsota števil v eni vrstici
    enaka številu $M_2(n)$. % sklica: eq:numbers, eq:numbers
+\end{proof}
 % Konec dokaza
 
 Preprost račun pokaže, da je konstanti ?? analogna konstanta
@@ -258,17 +287,24 @@ end{definicija}
 % - napis nad tabelo: Število različnih normalnih magičnih kvadratov
 % - oznaka: table:stevila
 % Začetek tabele
-      točna vrednost približek
-      red 1 2 3 4 5 6
-      število kvadratov 1 0 1 880 275305224 !!
+\begin{table}
+   \centering
+   \caption{Število različnih normalnih magičnih kvadratov}
+      \begin{tabular}{lcccccc}\toprule
+         &\multicolumn{5}{c}{točna vrednost} &približek\\\midrule
+         red &1 &2 &3 &4 &5 &6\\\
+         število kvadratov &1 &0 &1 &880 &275305224 &!!\\\bottomrule
+      \end{tabular}
+      \label{table:stevila}
+\end{table}
 % Konec tabele
 
 Vse normalne magične kvadrate reda 4 je oštevilčil Frénicle de Bessy
-leta 1693, glej ???, in jih je moč najti v knjigi ???
+leta 1693, glej \cite{bessy}, in jih je moč najti v knjigi \cite{berlekamp}
 iz leta 1982. Število normalnih kvadratov reda 5 je izračunal
-R. Schroeppel leta 1973 (glej Gardner ???).
+R. Schroeppel leta 1973 (glej \cite{gardner}).
 Natančno število vseh različnih normalnih magičnih kvadratov reda 6 ni znano.
-Avtorja navedenega približka sta Pinn in Wieczerkowski (glej ???), ki
+Avtorja navedenega približka sta Pinn in Wieczerkowski (glej \cite{pinn}), ki
 sta za oceno uporabila simulacijo Monte Carlo in metode statistične mehanike.
  % ključi: bessy, berlekamp, gardner, pinn
 
@@ -313,7 +349,7 @@ magični kvadrati redov 5, 6 in 9.
 \newpage
 
 % Tu vstavite bibliografijo
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\bibliographystyle{plain}
+\bibliography{magic}
 \end{document}
