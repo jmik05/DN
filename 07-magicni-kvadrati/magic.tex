@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{url}
 \usepackage{graphicx}
@@ -93,6 +94,7 @@ Primer magičnega kvadrata reda 3 je prikazan v tabeli ?!?.
 \begin{definicija}
    Magični kvadrat reda $n$ je \emph{normalen}, če v njem nastopajo števila
    \begin{equation}
+      \label{eq:numbers}
       % oznaka: eq:numbers
       1, 2, 3, \ldots, n^2-1, n^2.
    \end{equation}
@@ -159,7 +161,7 @@ v Khajurahu v Indiji in v Enciklopediji Bratovščine Čistosti iz enajstega
 ali dvanajstega stoletja. Vrh vsega gre celo za ">panmagični kvadrat"<.
 V Evropi sta morda najbolj znana naslednja magična kvadrata reda 4:
 
-Magični kvadrat v litografiji Melancholia I (glej sliko ??
+Magični kvadrat v litografiji Melancholia I (glej sliko \ref{fig:durer}
 za izsek s kvadratom) Albrechta Dürerja naj bi bil najzgodnejši magični kvadrat
 v evropski umetnosti. Zelo podoben je kvadratu Yang Huija, ki je nastal na Kitajskem
 približno 250 let pred Dürerjevim časom. % sklic: fig:durer
@@ -192,7 +194,7 @@ simetričnih parov ($2+8+9+15$ in $3+5+12+14$), in še na nekaj drugih načinov.
 %    4 & 15 & 14 &  1 \\\hline
 
 Pasijonska fasada na katedrali Sagrada família v Barceloni
-(glej sliko ?? za fotografijo) vsebuje magični kvadrat reda 4.
+(glej sliko \ref{fig:sagrada} za fotografijo) vsebuje magični kvadrat reda 4.
 % sklic: fig:sagrada
 
 % Tu vstavite sliko
@@ -228,9 +230,10 @@ end{definicija}
 
 % Začetek okolja izrek
 \begin{izrek}
-   Magična konstanta normalnega magičnega kvadrata reda !!
+   Magična konstanta normalnega magičnega kvadrata reda $n$
    je enaka
    \begin{equation}
+      \label{eq:mc}
       % oznaka: eq:mc
       M_2(n) = \frac{1}{2} n(n^2+1)
    \end{equation}
@@ -242,17 +245,17 @@ end{definicija}
    
 
    V normalnem magičnem kvadratu reda $n$ je vsota vseh nastopajočih
-   števil (glej ?? na strani ??) enaka
+   števil (glej \eqref{eq:numbers} na strani \eqref{eq:numbers}) enaka
    $1+2+3+\dots+n^2=\sum_{k=1}^{n^2}k=\frac{1}{2}n^2(n^2+1)$. Ker imamo
    v kvadratu $n$ vrstic z enako vsoto, je vsota števil v eni vrstici
    enaka številu $M_2(n)$. % sklica: eq:numbers, eq:numbers
 \end{proof}
 % Konec dokaza
 
-Preprost račun pokaže, da je konstanti ?? analogna konstanta
+Preprost račun pokaže, da je konstanti \eqref{eq:mc} analogna konstanta
 $M_2(n;A,D)$ za magični kvadrat, v katerem so nameščena števila
 $A$, $A+D$, $A+2D$, \dots, $A+(n^2-1)D$, enaka % sklic: eq:mc
-!!
+$$\mathcal{M}_2(n;A,D) = \frac{1}{2}n(2A + D(n^2 - 1)).$$
 Kvadratu v tabeli ?!? ustrezata konstanti $A=20$ in $D=1$.
 
 begin{definicija}
@@ -281,7 +284,7 @@ begin{definicija}
       iz drugega s pomočjo zasukov oziroma zrcaljenj.
 end{definicija}
 
-Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli ??.
+Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli \ref{table:stevila}.
 % sklic: table:stevila
 
 % - napis nad tabelo: Število različnih normalnih magičnih kvadratov
@@ -293,7 +296,7 @@ end{definicija}
       \begin{tabular}{lcccccc}\toprule
          &\multicolumn{5}{c}{točna vrednost} &približek\\\midrule
          red &1 &2 &3 &4 &5 &6\\\
-         število kvadratov &1 &0 &1 &880 &275305224 &!!\\\bottomrule
+         število kvadratov &1 &0 &1 &880 &275305224 &$(1,7745\pm 0,0016 )10^{19}$\\\bottomrule
       \end{tabular}
       \label{table:stevila}
 \end{table}
