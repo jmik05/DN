@@ -24,8 +24,18 @@
 \headcommand {\beamer@framepages {17}{17}}
 \headcommand {\slideentry {2}{0}{5}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {19}{18}}
+\headcommand {\beamer@sectionpages {12}{18}}
+\headcommand {\beamer@subsectionpages {12}{18}}
+\headcommand {\sectionentry {3}{Matematika, 1. del\\\large {Analiza, logika, množice}}{19}{Matematika, 1. del}{0}}
 \headcommand {\beamer@sectionpages {19}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\gdef \inserttotalframenumber {10}}
+\headcommand {\beamer@subsectionpages {19}{18}}
+\headcommand {\sectionentry {4}{Stolpci in slike}{19}{Stolpci in slike}{0}}
+\headcommand {\slideentry {4}{0}{1}{19/25}{}{0}}
+\headcommand {\beamer@framepages {19}{25}}
+\headcommand {\slideentry {4}{0}{2}{26/32}{}{0}}
+\headcommand {\beamer@framepages {26}{32}}
+\headcommand {\beamer@partpages {1}{32}}
+\headcommand {\beamer@subsectionpages {33}{32}}
+\headcommand {\beamer@sectionpages {33}{32}}
+\headcommand {\beamer@documentpages {32}}
+\headcommand {\gdef \inserttotalframenumber {12}}
